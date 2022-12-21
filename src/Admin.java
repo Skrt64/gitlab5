@@ -12,9 +12,12 @@ public class Admin extends User{
         }
     }
     public void doExtra(){
-        LocalDate date = LocalDate.now();
+        LocalDate date = LocalDate.ofEpochDay(LocalDate.now().getMonthValue());
         if(date.equals(getDob())){
             System.out.println("Happy birthday Admin!");
         }else System.out.println("No");
+    }
+    public  void greet(String x) {
+        System.out.println(x);
     }
 }

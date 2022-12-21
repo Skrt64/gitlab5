@@ -28,4 +28,7 @@ public class User {
     public void setDob(int year, int month, int day){
         this.dob = LocalDate.of(year, month, day);
     }
+    protected final void greet(){
+        System.out.println("Hello!");
+    }
 }
